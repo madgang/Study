@@ -51,7 +51,7 @@ app.get(['/topic','/topic/:id'],function(req,res){
     var id = req.params.id;
 
     // ID 값이 있는경우
-    
+    // ID 값이 있는 경우 처리
     if(id){
       fs.readFile('data/'+id,'utf-8',function(err,data){
         if(err){
