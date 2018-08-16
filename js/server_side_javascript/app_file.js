@@ -49,6 +49,7 @@ app.get(['/topic','/topic/:id'],function(req,res){
       res.status(500).send('Internal Server Error')
     }
     var id = req.params.id;
+    
     // ID 값이 있는경우
     if(id){
       fs.readFile('data/'+id,'utf-8',function(err,data){
